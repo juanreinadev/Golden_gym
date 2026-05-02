@@ -9,12 +9,6 @@ def inicio():
     return render_template("inicio.html")
 
 
-
-
-
-
-
-
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":

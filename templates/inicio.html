@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +7,48 @@
     <title>inicio</title>
 </head>
 <body>
-<div class="presentacion">
+<header>
+<img src="{{ url_for('static', filename='imagen/golden gym img.jpeg')}}" alt="logo">
+</header>
 
-<h1>Golden GYM</h1>
-<p>Hola bienvenido a Golden gym baq, somos un gimnasio ideal para que puedas encontrar ese fisico que tanto estas buscando,
- a continuacion si ya tienes una cuenta creada puedes iniciar seccion o si no es asi te invitamos a registrarse y ver las opciones que tenemos para ti</p>
+<main>
 
- <img src="https://lh3.googleusercontent.com/p/AF1QipNkZia98ANAgtn87ax-xKFJIw-_GuD8GAVIJiam=w243-h244-n-k-no-nu" alt="golden gym">
+    <section id="entrada">
+        <h1>Golden Gym</h1>
+        <p>¿Buscas resultados reales? Has llegado al lugar indicado. Regístrate en Golden Gym para desbloquear tu plan de entrenamiento inicial,
+             conocer a nuestros coaches y acceder a la plataforma donde gestionas tu progreso. ¡Únete a la comunidad #Goldengym!</p>
+        
+        <a href="/registro" class="btn">👉 ¡COMIENZA AHORA!</a>
+    </section>
 
-</div>
+    <section id="servicios">
+        <h2>Nuestros servicios</h2>
+        <ul>
+            <li>entrenamientos personalizados</li>
+            <li>Clases grupales </li>
+            <li>Plan nutricional</li>
+        </ul>
+    </section>
 
+    <section id="beneficios">
+        <h2>¿Porque elegir Golden GYM?</h2>
+        <p>Elegir nuestro gimnasio significa unirte a una comunidad diseñada para que dejes de intentar y empieces a lograr,
+             combinando equipamiento de última generación con una guía profesional que personaliza cada paso de tu camino. Aquí no solo vienes a entrenar,
+              vienes a transformar tu energía en un ambiente motivador donde cada detalle está pensado para que alcances tus metas de forma segura y constante.
+             No busques solo un lugar con máquinas, elige el espacio donde tu disciplina encuentra resultados reales y donde cada sesión te acerca a la mejor versión de ti mismo.</p>
+    </section>
 
-<div class="botones">
-<h1>Bienvenido elige lo que quieras hacer</h1>
+    <section id="cta">
+        <h2>Empieza hoy</h2>
+        <p>no esperes mas para cambiar tu vida con Golden Gym</p>
+        <a href="/login">iniciar sesion</a>
 
-<a href="/login" class="btn">iniciar seccion</a>
+        <br><br>
 
+        <a href="/registro">registarse</a>
+    </section>
 
-<br><br>
-
-
-<a href="/registro" class="btn">registrarse</a>
-</div>
-
+</main>
 </body>
 
 </html>
