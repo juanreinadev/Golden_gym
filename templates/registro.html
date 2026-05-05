@@ -10,19 +10,22 @@
     <h1>registrar usuario</h1>
     <form method="POST" action="/registro">
 
-        <label for="usuario_registro">escriba un usuario</label>
-        <input type="text" id="usuario_registro" name="usuario" placeholder="usuario" required>
+    <label>escriba su nombre</label>
+    <input type="text" name="usuario" placeholder="usuario" required>
 
-        <br><br>
+    <br><br>
 
-        <label for="contraseña_registro">escriba una contraseña</label>
-        <input type="password" id="contraseña_registro" name="contraseña" placeholder="contraseña" required>
+    <label>escriba su correo</label>
+    <input type="email" name="correo" placeholder="correo" required>
 
-        <br><br>
+    <br><br>
 
-        <button type="submit">crear usuario</button>
-    </form>
-    </div>
+    <label>escriba una contraseña</label>
+    <input type="password" name="contraseña" placeholder="contraseña" required>
 
+    <br><br>
+
+    <button type="submit">crear usuario</button>
+</form>
 </body>
 </html>
