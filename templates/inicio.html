@@ -7,18 +7,27 @@
     <title>inicio</title>
 </head>
 <body>
-<header>
-<img src="{{ url_for('static', filename='imagen/golden gym img.jpeg')}}" alt="logo">
-</header>
+    <header>
+        <img src="{{ url_for('static', filename='imagen/golden gym img.jpg') }}" alt="logo" class="logo">
+
+         <h2 class="titulo-header">Tu cambio empieza aquí</h2>
+
+    <div class="nav">
+        <a href="/login" class="btn-nav">Iniciar sesión</a>
+        <a href="/registro" class="btn-nav">Registrarse</a>
+    </div>
+    </header>
 
 <main>
 
     <section id="entrada" class="entrada">
+        <div class="texto">
         <h1>Golden Gym</h1>
         <p>¿Buscas resultados reales? Has llegado al lugar indicado. Regístrate en Golden Gym para desbloquear tu plan de entrenamiento inicial,
              conocer a nuestros coaches y acceder a la plataforma donde gestionas tu progreso. ¡Únete a la comunidad #Goldengym!</p>
-        
+             
         <a href="/registro" class="btn">👉 ¡COMIENZA AHORA!</a>
+        </div>
     </section>
 
     <section id="servicios" class="servicios">
@@ -39,8 +48,8 @@
     </section>
 
     <section id="cta" class="cta">
-        <h2>Empieza hoy</h2>
-        <p>no esperes mas para cambiar tu vida con Golden Gym</p>
+        <h2>¡EMPIEZA HOY!</h2>
+        <p>No esperes mas para cambiar tu vida con Golden Gym</p>
         <a href="/login" class="btn">iniciar sesion</a>
 
         <br><br>
