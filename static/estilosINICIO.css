@@ -1,112 +1,51 @@
-body {
+body{
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #0f7a26;
-    color: rgb(250, 250, 250);
+
 }
 
-/* HEADER */
-header {
+
+
+header{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
-    background-color: #020617;
+    background-color: rgba(26, 26, 26, 0.665);
 }
 
-/* LOGO */
-.logo {
-    width: 60px;
-}
 
-/* TEXTO CENTRO */
-.titulo-header {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/* BOTONES DERECHA */
-.nav {
+.titulo{
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
 
-.btn-nav {
-    text-decoration: none;
-    background-color: #f43f5e;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 6px;
-    transition: 0.3s;
-    font-size: 14px;
+.logo{
+    height: 50px;
+    width: auto;
+    display: block;
+    border-radius: 50px;
 }
 
-.btn-nav:hover {
-    background-color: #e11d48;
-}
-
-/* SECCIONES */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* HERO */
-.entrada {
-    padding: 60px 20px;
-}
-
-/* TEXTO */
-.texto {
-    max-width: 500px;
-    margin: auto;
-}
-
-.texto h1 {
-    font-size: 45px;
-    margin-bottom: 15px;
-}
-
-.texto p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-/* BOTONES */
-.btn {
+a{
     display: inline-block;
     text-decoration: none;
-    background-color: #f43f5e;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
-    transition: 0.3s;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: black;
+    background-color: rgb(47, 162, 6);
+    transition: all 0.3 ease;
+    padding: 12px 24px;
     font-weight: bold;
+    border-radius: 50px;
 }
 
-.btn:hover {
-    background-color: #e11d48;
+a:hover{
+    background-color: rgb(3, 59, 3);
+    transform: scale(1.05);
 }
 
-/* SERVICIOS */
-.servicios ul {
-    list-style: none;
-    padding: 0;
-}
-
-.servicios li {
-    margin: 10px 0;
-    font-size: 18px;
-}
-
-/* BENEFICIOS */
-.beneficios p {
-    max-width: 800px;
-    margin: auto;
-    line-height: 1.6;
-}
-
-/* CTA FINAL */
-.cta {
-    background-color: #020617;
+footer{
+    text-align: right;
 }
